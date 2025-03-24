@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KintampoToDay</title>
+  <link rel="stylesheet" href="kinss.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body id="themer" >
+    <center>
+  <header>
+    <h1>Welcome to KintampoToDay</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#tourist-sites">Tourist Sites</a></li>
+        <li><a href="#events">Upcoming Events</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#books">Order Books</a></li>
+        <li><button id="themeButton"  style="border: none; background-color:rgb(0, 247, 255); border-radius: 5px;" onclick="changeTheme()">Theme</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home">
+    <h2 style="color: aqua;">About Kintampo</h2>
+    <div id="p">
+        <p>
+            <h4>
+                Kintampo is a vibrant community rich in culture, history, and natural beauty. Explore our tourist sites, stay updated on events, and learn more about our heritage.
+            </h4>
+        </p>
+    </div>
+    <hr>
+    <br><div id="p">
+        <p>Kintampo is well-connected by road, with major highways like the N10 and N11 passing through the town. These roads facilitate the movement of goods and people, linking Kintampo to cities like Kumasi, Tamale, and Accra. However, some rural roads still require upgrades to improve accessibility for surrounding communities.</p>
+    </div>
+    <div id="home-image">
+        <img src="kintampo.jpg" alt="Kintampo Landscape" width="100%">
+    </div>
+    <div id="p">
+        <p>The Kintampo College of Health and Well-Being (formerly known as the Kintampo Rural Health Training School) is one of Ghana’s premier institutions dedicated to training healthcare professionals. Located in the heart of Kintampo, in the Bono East Region, the college plays a critical role in addressing Ghana’s healthcare needs by producing skilled and compassionate health workers.</p>
+      </div>
+       <div id="home-image">
+        <img src="college.jpg" alt="Kintampo Landscape" width="100%">
+       </div>
+       <div id="p">
+        <p>The town is home to the Kintampo Municipal Hospital, which serves as a key healthcare provider for the region. Additionally, there are several clinics and community health centers that cater to the needs of residents and nearby rural areas.</p>
+    </div>
+    <div id="home-image">
+        <img src="hospital.jpg" alt="Kintampo Landscape" width="100%">
+    </div>
+  </section>
+  
+  <section id="tourist-sites">
+    
+    <div class="tourist-site">
+        <h2 style="color: aqua;">Tourist Sites</h2>
+      <img src="waterfalls.jpeg" alt="Kintampo Waterfalls">
+      <h3>Kintampo Waterfalls</h3>
+      <p>A breathtaking natural wonder perfect for hiking and picnics.</p>
+    </div>
+    <div class="tourist-site">
+      <img src="museum.jpg" alt="Kintampo Museum">
+      <h3>Kintampo Museum</h3>
+      <p>Learn about the rich history and culture of the Kintampo people.</p>
+    </div>
+  </section>
+
+  <section id="events">
+    <h2 style="color: aqua;">Upcoming Events</h2>
+    <ul>
+      <li>Cultural Festival - October 15, 2025</li>
+      <li>Community Clean-Up - November 5, 2025</li>
+      <li>Farmers Market - Every Saturday</li>
+    </ul>
+  </section>
+
+  <section id="blog">
+   
+    <div class="blog-post">
+      <h2 style="color: aqua;">Blog</h2>
+      <h3>Exploring Kintampo's History</h3>
+      <p>Posted by Admin on March 23, 2025</p>
+      <h2>Discover the fascinating history of Kintampo through our latest blog post.</h2>
+      <p>
+        While the Kintampo Waterfalls often steal the spotlight, Fuller Falls is another hidden gem worth exploring. Located a few kilometers from the main town, this lesser-known waterfall offers a more secluded and tranquil experience. The journey to Fuller Falls is an adventure in itself, as you trek through scenic trails and immerse yourself in the natural beauty of the region.
+      </p>
+      <p>
+        Kintampo is not just about natural wonders; it’s also a place where you can connect with Ghana’s rich cultural heritage. The town is home to the Kintampo people, who are known for their warm hospitality and vibrant traditions. Take the time to visit local communities, where you can learn about traditional crafts, music, and dance. If you’re lucky, you might even witness a cultural festival or ceremony, which are often filled with colorful costumes, drumming, and storytelling.
+      </p>
+      <p>
+        Kintampo holds a special place in Ghana’s history. It is believed to be the geographical center of Ghana, earning it the nickname “The Center of Ghana.” This strategic location has made Kintampo a hub for trade and commerce over the years. The town also played a role in the trans-Saharan trade routes, connecting West Africa to North Africa and beyond.
+
+For history enthusiasts, a visit to the Kintampo Museum is a must. The museum offers insights into the town’s past, including its role in Ghana’s pre-colonial and colonial history. You’ll find artifacts, photographs, and exhibits that tell the story of Kintampo’s evolution over the centuries.
+      </p>
+      <span id="like-count">0</span>
+      <i onclick="likePost()" class="fa-solid fa-thumbs-up"></i>
+      <span id="dislike-count">0</span>
+      <i onclick="dislikePost()" class="fa-solid fa-thumbs-down"></i>
+       
+      <div class="comments">
+        <h4>Comments</h4>
+        <input style='width: 50%; border: none; border-radius: 5px;'type="text" id="comment-input" placeholder="Add a comment">
+        <button style='background-color: rgb(124, 241, 150);color: aliceblue; border-radius: 5px;' onclick="addComment()">Submit</button>
+        <ul style="background-color: beige;" id="comment-list"></ul>
+        <br>
+      </div>
+    </div>
+  </section>
+
+  <section id="books">
+    <h2 style="color: rgb(10, 59, 59);">Order Books</h2>
+    <form id="book-order-form">
+        
+      <label for="name">Name:</label>
+      <br><br>
+      <input type="text" id="name" required>
+      <br><br>
+      <label for="email">Email:</label>
+      <br><br>
+      <input type="email" id="email" required>
+      <br><br>
+      <label for="book">Select Book:</label>
+      <br><br>
+      <select id="book" required>
+        <br><br>
+        <option value="history">History of Kintampo</option>
+        <option value="culture">Kintampo Culture</option>
+        <option value="tourism">Tourist Guide to Kintampo</option>
+      </select>
+      <br><br>
+      <button style='background-color: rgb(6, 167, 41);color: aliceblue; border-radius: 5px;' type="submit">Order Now</button>
+      <br><br>
+      <input style='background-color: rgb(235, 81, 81); color: aliceblue; border-radius: 5px;'type="reset" name="clear" value="clear">
+    </form>
+  </section>
+
+  <footer>
+    <p>Contact Us: info@kintampotoday.com | Follow us on <a style="color: rgb(91, 160, 240);"  href="#">Facebook</a></p>
+  </footer>
+
+  <script src="kinss.js"></script>
+</center>
+</body>
+</html>
